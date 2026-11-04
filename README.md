@@ -76,7 +76,35 @@ Programacion Orientada a Objetos: Fase 1 conectada.
 * Error mujoco.FatalError al iniciar: Verificar que el archivo XML del modelo del robot Franka Panda se encuentra en la ruta esperada dentro de la carpeta src/vendor/mujoco_menagerie.
   
 
+# Planta Mujoco con 4 cintas transportadora 
 
+Simulación procedural en Python, **sin programación orientada a objetos**.
+
+## Diseño
+
+```text
+               CINTA 3  (-X)
+        <--------------------------
+        |                         ^
+        |                         |
+CINTA 4 |                         | CINTA 2
+  (-Y)  |                         |  (+Y)
+        v                         |
+        -------------------------->
+               CINTA 1  (+X)
+```
+
+El recorrido es horario:
+
+1. Cinta inferior: `+X`
+2. Cinta derecha: `+Y`
+3. Cinta superior: `-X`
+4. Cinta izquierda: `-Y`
+5. Regreso a la cinta inferior.
+
+Cada cinta dispone de una cámara superior. Las cuatro imágenes se muestran a la vez en una ventana OpenCV 2×2.
+
+## Instalación
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
