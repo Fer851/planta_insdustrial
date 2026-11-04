@@ -75,8 +75,7 @@ Programacion Orientada a Objetos: Fase 1 conectada.
 * El teclado no responde: Es indispensable hacer clic izquierdo sobre la ventana gris de OpenCV ("Camaras de la planta") para que esta tenga el foco; de lo contrario, las teclas modificarán las vistas internas de MuJoCo en lugar de activar las cintas.
 * Error mujoco.FatalError al iniciar: Verificar que el archivo XML del modelo del robot Franka Panda se encuentra en la ruta esperada dentro de la carpeta src/vendor/mujoco_menagerie.
   
-====================================== README de Jaime no modificado==============================
-## Instalación
+
 
 ```bash
 python3 -m venv .venv
