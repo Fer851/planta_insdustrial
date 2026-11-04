@@ -20,7 +20,7 @@ El sistema simula un entorno automatizado con 5 cintas transportadoras, un horno
 |--- README.md                # Este documento
 
 
-## Diseño
+## Diseño de la planta 
 
 ```text
                CINTA 3  (-X)
@@ -48,7 +48,7 @@ CINTA 4 |                         | CINTA 2
 * Activar entorno virtual (opcional pero recomendado): python main.py
 
 ## 6. Salida esperada 
-* Al ejecutar correctamente el programa, se abrirá la venta gráfica del visor de cámaras (el OpenCV)
+* Al ejecutar correctamente el programa, se abrirá la venta gráfica del visor de cámaras de OpenCV.
 * Salida en terminal:
   === PLANTA ROBOTIZADA: 4 CINTAS + PANDA + HORNO ===
 Circuito: inferior -> derecha -> superior -> izquierda -> inferior
@@ -66,7 +66,7 @@ Panda base=(-1.02, 0.20, 0.16) yaw=-90 deg
 Programacion Orientada a Objetos: Fase 1 conectada.
 ..........
 
-* Interacción en la ventana de OpenCV para acceder a las operaciones disponibles en el teclado:
+* Controles (desde la ventana de OpenCV):
   * 1 a 5: Alternar el estado de cada cinta (on/off).
   * p/p: Pausar la simulación física.
   * q o ESC: Cerrar el simulador de forma segura. 
